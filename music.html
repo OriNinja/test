@@ -1,49 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Website made for practice">
-    <link rel="stylesheet" href="style.css"/>
-    <title>Name official site</title>
-  </head>
-  <style>
-  html {
-    scroll-behavior: smooth;
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Website made for practice">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Name Official site</title>
+</head>
+<style>
+  html { scroll-behavior: smooth; }
+  a { text-decoration: none; }
+  @media screen and (max-width: 1000px){
+    div.desktop-view {
+      display: none;
+    }
   }
-  </style>
-  <body style="background:black; ">
+  @media screen and (min-width: 1001px){
+    div.mobile-view {
+      display: none;
+    }
+  }
+</style>
+<body style="background:black;">
+  <!--DESKTOP-VIEW---------------------------------------------->
+  <div class="desktop-view">
     <header>
-      <img src="Assets/Group 1@2x.png" alt="paradiceLogo" style="position: absolute; top: 51px; left: 120px">
-      <a href="home.html" style="text-decoration: none;"> <span class="header-font" style="position: absolute; top: 73px; left: 482px">Home</span> </a>
-      <a href="aboutUs.html" style="text-decoration: none"> <span class="header-font" style="width: 157px; position: absolute; top: 73px; left: 700px">About Us</span> </a>
-      <span class="selected-font" style="position: absolute; top: 73px; left: 980px">Music</span>
-      <a href="#footer-font" style="text-decoration: none"> <span class="header-font" style="position: absolute; top: 73px; right: 120px">Contact</span> </a>
+      <div class="head-box" style="width:88%;  margin: 2.2% 0 2% 6%;">
+        <div><img src="Name_Logo.png" alt="paradiceLogo" width="269"></div>
+        <a href="index.html"><div class="header-font">Home</div></a>
+        <a href="aboutUs.html"><div class="header-font">About Us</div></a>
+        <div class="selected-font">Music</div>
+        <a href="#footer-font"><div class="header-font">Contact</div></a>
+      </div>
     </header>
-
-
-    <main>
-      <img style="position: relative; display: block; margin-left: auto; margin-right: auto; top: 199px;" width="1200px" src="Assets/Group 9@2x.png" alt="musicPlayer">
-      <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <main style="margin: 0 6% 0 6%">
+      <img src="Music_Player.png" alt="music player" style="width:100%;">
     </main>
-
-
     <footer>
-      <hr class="footer-line" style="display: block; margin-left: 110px; margin-right: 110px;">
-
-      <span id="footer-font" style="position: absolute; top: 898px; left: 120px">For Business Inquiries, please email us at: <br> <br> Paridicemusic@gmail.com</span>
-
-      <a href="https://www.instagram.com/" target="_blank">
-        <img style="position: absolute; top: 889px; left: 971.5px;" src="Assets/Icon awesome-instagram@2x.png" alt="instaDirect"/>
-      </a>
-      <a href="https://www.youtube.com/" target="_blank">
-        <img style="position: absolute; top: 891.26px; left: 1019.5px;" src="Assets/Icon awesome-youtube@2x.png" alt="youtubeDirect"/>
-      </a>
-      <a href="https://www.spotify.com/us/home/" target="_blank">
-        <img style="position: absolute; top: 889px; left: 1074.5px;" src="Assets/Icon awesome-spotify@2x.png" alt="spotifyDirect"/>
-      </a>
-      <span class="footer2-font" style="position: absolute; top: 939px; right: 120px">Powered by GhostWeb. <br> Made with love from Seattle.</span>
-
-      <br> <br> <br> <br> <br> <br> <br> <br> <br>
+      <hr class="footer-line" style="display: block; margin: 4.5% 6% 0 6%;">
+      <div class="head-box" style="margin: 3% 6% 3.5% 6%">
+        <div id="footer-font" style="">For Business Inquiries, please email us at: <br> <br> loremipsum@gmail.com</div>
+        <div>
+        <div class="head-box" style="width: 40%; margin: 0 0 2% 0">
+          <a href="https://www.instagram.com/" target="_blank">
+            <img width="70%" src="IG_Logo.png" alt="instaDirect"/></a>
+          <a href="https://www.youtube.com/" target="_blank">
+            <img width="80%" src="YT_Logo.png" alt="youtubeDirect"/></a>
+          <a href="https://www.spotify.com/us/home/" target="_blank">
+            <img width="70%" src="Spotify_Logo.png" alt="spotifyDirect"/></a>
+        </div>
+        <div class="footer2-font" style="">Powered by Ori. <br> Made with love from Seattle.</div>
+          </div>
+        </div>
     </footer>
-  </body>
+  </div>
+  <!--MOBILE-VIEW----------------------------------------------->
+  <div class="mobile-view">
+      <!--NOT on Menu-------------------------->
+    <div id="notMenu">
+      <header>
+        <div class="head-box" style="width:84%; margin: 9.4% 0 9% 8%;">
+           <img src="Name_Logo.png" alt="paradiceLogo" width="73%" style="">
+           <img id="menuIcon" onclick="showMenu()" src="Menu_Icon.png" alt="menuIcon" width="16%" style="cursor: pointer; user-select: none;">
+        </div>
+      </header>
+      <main style="margin: 10% 9% 0 9%">
+
+      </main>
+      <footer style="margin: 10% 0 4% 8%;">
+        <div class="head-box" style="width: 40%; margin: 0 0 2% 0">
+          <div style="margin: 0 10% 0 0">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img width="100%" src="IG_Logo.png" alt="instaDirect"/></a>
+          </div>
+          <div style="margin: 0 10% 0 0">
+            <a href="https://www.youtube.com/" target="_blank">
+              <img width="100%" src="YT_Logo.png" alt="youtubeDirect"/></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/us/home/" target="_blank">
+              <img width="100%" src="Spotify_Logo.png" alt="spotifyDirect"/></a>
+          </div>
+        </div>
+        <div class="footer2-mobile-font" style="">Powered by Ori. <br> Made with love from Seattle.</div>
+      </footer>
+    </div>-->
+      <!--ON Menu----------------------------->
+    <div id="onMenu" style="display: none;">
+      <header></header>
+      <main>
+        <div class="head-box" style="width:84%; margin: 4% 8% 0% 8%; align-items: baseline;;">
+          <div>
+            <a href="index.html"><div class="menu-font">Home</div></a>
+            <div class="menu-font">About Us</div>
+            <a href="music.html"><div class="menu-font">Music</div></a>
+            <a href="contact.html"><div class="menu-font">Contact</div></a>
+          </div>
+          <img id="exitIcon" onclick="hideMenu()" src="exit_icon.png" alt="exit" width="13%" style="cursor: pointer; user-select: none;">
+        </div>
+      </main>
+      <footer style="margin: 0% 8% 4% 8%;">
+        <div class="head-box"style="width: 50%; margin: 0 0 6% 0">
+          <div style="margin: 0 10% 0 0">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img width="100%" src="IG_Logo.png" alt="instaDirect"/></a>
+          </div>
+          <div style="margin: 0 10% 0 0">
+            <a href="https://www.youtube.com/" target="_blank">
+              <img width="100%" src="YT_Logo.png" alt="youtubeDirect"/></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/us/home/" target="_blank">
+              <img width="100%" src="Spotify_Logo.png" alt="spotifyDirect"/></a>
+          </div>
+        </div>
+        <div class="menu-footer-font" style="">Powered by Ori. <br> Made with love from Seattle.</div>-->
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </div>
+</body>
 </html>
