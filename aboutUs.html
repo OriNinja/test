@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Website made for practice">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Name Official site</title>
+</head>
+<style>
+  html { scroll-behavior: smooth; }
+  a { text-decoration: none; }
+  @media screen and (max-width: 1000px){
+    div.desktop-view {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1001px){
+    div.mobile-view {
+      display: none;
+    }
+  }
+</style>
+<body style="background:black;">
+  <!--DESKTOP-VIEW---------------------------------------------->
+  <div class="desktop-view">
+    <header>
+      <div class="head-box" style="width:88%;  margin: 2.2% 0 2% 6%;">
+        <div><img src="Name_Logo.png" alt="paradiceLogo" width="269"></div>
+        <a href="index.html"><div class="header-font">Home</div></a>
+        <div class="selected-font">About Us</div>
+        <a href="music.html"><div class="header-font">Music</div></a>
+        <a href="#footer-font"><div class="header-font">Contact</div></a>
+      </div>
+    </header>
+    <main style="margin: 0 6% 0 6%">
+      <div class="head-box">
+        <div style="width: 30%">
+          <img src="Member1.png" alt="Member1" width="100%">
+          <div class="big-font" style="text-align: center; margin: 4% 0 0% 0">
+            <b>Christy Littel III</b>
+          </div>
+        </div>
+        <div style="width: 30%">
+          <img src="Member2.png" alt="Member1" width="100%">
+          <div class="big-font" style="text-align: center; margin: 4% 0 0% 0">
+            <b>Vickie Tillman Jr.</b>
+          </div>
+        </div>
+        <div style="width: 30%">
+          <img src="Member3.png" alt="Member1" width="100%">
+          <div class="big-font" style="text-align: center; margin: 4% 0 0% 0">
+            <b>Ozella Williamson</b>
+          </div>
+        </div>
+      </div>
+      <div class="big-font" style="margin: 6.5% 0 0 0">
+        <b>Christy Littel III</b> lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br><br><br>
+        <b>Vickie Tillman Jr.</b> lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.<br><br><br>
+        <b>Ozella Williamson</b> lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.<br>
+      </div>
+    </main>
+    <footer>
+      <hr class="footer-line" style="display: block; margin: 4.5% 6% 0 6%;">
+      <div class="head-box" style="margin: 3% 6% 3.5% 6%">
+        <div id="footer-font" style="">For Business Inquiries, please email us at: <br> <br> loremipsum@gmail.com</div>
+        <div>
+        <div class="head-box" style="width: 40%; margin: 0 0 2% 0">
+          <a href="https://www.instagram.com/" target="_blank">
+            <img width="70%" src="IG_Logo.png" alt="instaDirect"/></a>
+          <a href="https://www.youtube.com/" target="_blank">
+            <img width="80%" src="YT_Logo.png" alt="youtubeDirect"/></a>
+          <a href="https://www.spotify.com/us/home/" target="_blank">
+            <img width="70%" src="Spotify_Logo.png" alt="spotifyDirect"/></a>
+        </div>
+        <div class="footer2-font" style="">Powered by Ori. <br> Made with love from Seattle.</div>
+          </div>
+        </div>
+    </footer>
+  </div>
+  <!--MOBILE-VIEW----------------------------------------------->
+  <div class="mobile-view">
+      <!--NOT on Menu-------------------------->
+    <div id="notMenu">
+      <header>
+        <div class="head-box" style="width:84%; margin: 9.4% 0 9% 8%;">
+           <img src="Name_Logo.png" alt="paradiceLogo" width="73%" style="">
+           <img id="menuIcon" onclick="showMenu()" src="Menu_Icon.png" alt="menuIcon" width="16%" style="cursor: pointer; user-select: none;">
+        </div>
+      </header>
+      <main style="margin: 10% 9% 0 9%">
+          <div style="width: 100%">
+            <div class="small-font" style="text-align: center; margin: 0% 0 8% 0">
+              <b>Christy Littel III</b>
+            </div>
+            <img src="Member1.png" alt="Member1" width="100%">
+            <div class="small-font" style="margin: 8% 0 0 0">
+              <b>Christy Littel III</b> lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br><br><br>
+            </div>
+          </div>
+          <div style="width: 100%">
+            <div class="small-font" style="text-align: center; margin: 4% 0 8% 0">
+              <b>Vickie Tillman Jr.</b>
+            </div>
+            <img src="Member2.png" alt="Member1" width="100%">
+            <div class="small-font" style="margin: 8% 0 0 0">
+              <b>Vickie Tillman Jr.</b> lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.<br><br><br>
+            </div>
+          </div>
+          <div style="width: 100%">
+            <div class="small-font" style="text-align: center; margin: 4% 0 8% 0">
+              <b>Ozella Williamson</b>
+          </div>
+            <img src="Member3.png" alt="Member1" width="100%">
+            <div class="small-font" style="margin: 8% 0 0 0">
+              <b>Ozella Williamson</b> lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.<br>
+            </div>
+        </div>
+      </main>
+      <footer style="margin: 10% 0 4% 8%;">
+        <div class="head-box" style="width: 40%; margin: 0 0 2% 0">
+          <div style="margin: 0 10% 0 0">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img width="100%" src="IG_Logo.png" alt="instaDirect"/></a>
+          </div>
+          <div style="margin: 0 10% 0 0">
+            <a href="https://www.youtube.com/" target="_blank">
+              <img width="100%" src="YT_Logo.png" alt="youtubeDirect"/></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/us/home/" target="_blank">
+              <img width="100%" src="Spotify_Logo.png" alt="spotifyDirect"/></a>
+          </div>
+        </div>
+        <div class="footer2-mobile-font" style="">Powered by Ori. <br> Made with love from Seattle.</div>
+      </footer>
+    </div>-->
+      <!--ON Menu----------------------------->
+    <div id="onMenu" style="display: none;">
+      <header></header>
+      <main>
+        <div class="head-box" style="width:84%; margin: 4% 8% 0% 8%; align-items: baseline;;">
+          <div>
+            <a href="index.html"><div class="menu-font">Home</div></a>
+            <div class="menu-font">About Us</div>
+            <a href="music.html"><div class="menu-font">Music</div></a>
+            <a href="contact.html"><div class="menu-font">Contact</div></a>
+          </div>
+          <img id="exitIcon" onclick="hideMenu()" src="exit_icon.png" alt="exit" width="13%" style="cursor: pointer; user-select: none;">
+        </div>
+      </main>
+      <footer style="margin: 0% 8% 4% 8%;">
+        <div class="head-box"style="width: 50%; margin: 0 0 6% 0">
+          <div style="margin: 0 10% 0 0">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img width="100%" src="IG_Logo.png" alt="instaDirect"/></a>
+          </div>
+          <div style="margin: 0 10% 0 0">
+            <a href="https://www.youtube.com/" target="_blank">
+              <img width="100%" src="YT_Logo.png" alt="youtubeDirect"/></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/us/home/" target="_blank">
+              <img width="100%" src="Spotify_Logo.png" alt="spotifyDirect"/></a>
+          </div>
+        </div>
+        <div class="menu-footer-font" style="">Powered by Ori. <br> Made with love from Seattle.</div>-->
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>

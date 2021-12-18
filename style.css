@@ -1,0 +1,83 @@
+.selected-font{
+    color: white;
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    /*border-bottom: 9px solid #b5b5b5;
+    width: 105.5px;
+    text-align: center;*/
+}
+
+.header-font{
+    color: white;
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight:normal;
+}
+
+.header-font:hover {
+  text-shadow: 0px 0px 14px white;
+}
+
+.small-font {
+  color: white;
+  font-family: 'Arial', Helvetica, sans-serif;
+  font-size: 5.5vw;
+}
+
+.big-font {
+  color: white;
+  font-family: 'Arial', Helvetica, sans-serif;
+  font-size: 2.25vw;
+}
+
+#footer-font{
+    color: white;
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.footer2-font{
+    color: #7C7C7C;
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.footer2-mobile-font{
+  color: #7C7C7C;
+  font-family: 'Arial', Helvetica, sans-serif;
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.footer-line {
+    border: 4px solid white;
+    border-radius: 4px;
+  }
+
+.head-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-font {
+  color: white;
+  font-family: 'Arial', Helvetica, sans-serif;
+  font-size: 12vw;
+  font-weight: bold;
+  margin-bottom: 15vw;
+}
+
+.menu-footer-font{
+  color: #7C7C7C;
+  font-family: 'Arial', Helvetica, sans-serif;
+  font-size: 5.5vw;
+  font-weight: bold;
+}
+
+.selected-menu-font {
+
+}
