@@ -34,7 +34,7 @@ var songsArray2 = [
     length: "1:49",
     source: ""
   }
-]
+];
 
 var songBox = document.getElementById('songBox');
 
