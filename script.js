@@ -12,29 +12,34 @@ function hideMenu() {
 }
 
 var songsArray = "hello, hello, hello, rej, ef, ef, fwfw, wfj";
-var songsArray2 = {
-  title: "Travel Way",
-  length: "1:55",
-  source: ""
-}, {
-  title: "Sumi",
-  length: "1:29"
-}, {
-  title: "Try Again",
-  length: "1:42"
-}, {
-  title: "Neon Tiger",
-  length: "1:54"
-}, {
-  title: "Sakura",
-  length: "1:49"
-}
+var songsArray2 = [
+  {
+    title: "Travel Way",
+    length: "1:55",
+    source: ""
+  }, {
+    title: "Sumi",
+    length: "1:29",
+    source: ""
+  }, {
+    title: "Try Again",
+    length: "1:42",
+    source: ""
+  }, {
+    title: "Neon Tiger",
+    length: "1:54",
+    source: ""
+  }, {
+    title: "Sakura",
+    length: "1:49",
+    source: ""
+  }
+]
 
-songsArray = songsArray.split(",");
 var songBox = document.getElementById('songBox');
 
 //songBox.innerHTML=songsArray[2]
 
 for (var i = 0; i < songsArray.length; i++) {
-  songBox.innerHTML = songBox.innerHTML + songsArray[i] + "<br>";
+  songBox.innerHTML = songBox.innerHTML + songsArray[i].title + "<br>";
 }
