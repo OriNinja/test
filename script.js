@@ -40,6 +40,6 @@ var songBox = document.getElementById('songBox');
 
 //songBox.innerHTML=songsArray[2]
 
-for (var i = 0; i < songsArray.length; i++) {
-  songBox.innerHTML = songBox.innerHTML + songsArray[i].title + "<br>";
+for (var i = 0; i < songsArray2.length; i++) {
+  songBox.innerHTML = songBox.innerHTML + songsArray2[i].title + "<br>";
 }
