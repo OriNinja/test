@@ -10,3 +10,31 @@ function hideMenu() {
   notMenu.style.display = "block";
   onMenu.style.display = "none";
 }
+
+var songsArray = "hello, hello, hello, rej, ef, ef, fwfw, wfj";
+var songsArray2 = {
+  title: "Travel Way",
+  length: "1:55",
+  source: ""
+}, {
+  title: "Sumi",
+  length: "1:29"
+}, {
+  title: "Try Again",
+  length: "1:42"
+}, {
+  title: "Neon Tiger",
+  length: "1:54"
+}, {
+  title: "Sakura",
+  length: "1:49"
+}
+
+songsArray = songsArray.split(",");
+var songBox = document.getElementById('songBox');
+
+//songBox.innerHTML=songsArray[2]
+
+for (var i = 0; i < songsArray.length; i++) {
+  songBox.innerHTML = songBox.innerHTML + songsArray[i] + "<br>";
+}
