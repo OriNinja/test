@@ -22,38 +22,72 @@
 </style>
 <body style="background:black;">
   <!--DESKTOP-VIEW---------------------------------------------->
-  <div class="desktop-view">
-    <header>
-      <div class="head-box" style="width:88%;  margin: 2.2% 0 2% 6%;">
-        <div><img src="assets/Name_Logo.png" alt="paradiceLogo" width="269"></div>
-        <a href="index.html"><div class="header-font">Home</div></a>
-        <a href="aboutUs.html"><div class="header-font">About Us</div></a>
-        <div class="selected-font">Music</div>
-        <a href="#footer-font"><div class="header-font">Contact</div></a>
-      </div>
+  <div class="desktop-view" style="margin: 0 6% 0 6%">
+    <header style="margin-top: 2.2%" class="head-box">
+      <div style="width: 25%"><img src="assets/Name_Logo.png" alt="paradiceLogo" width="100%"></div>
+      <div><a class="header-font" href="index.html">Home</a></div>
+      <div><a class="header-font" href="aboutUs.html">About Us</a></div>
+      <div class="selected-font">Music</div>
+      <div><a class="header-font" href="#footer-font">Contact</a></div>
     </header>
-    <main style="margin: 0 6% 0 6%">
-      <div class="big-font">*****doesn't do anything******</div>
-      <img src="assets/Music_Player.png" alt="music player" style="width:100%;">
-      <div id="songBox" class="big-font" style="border: 3px solid white; width: 100%; border-radius: 20px; color: white; padding: 10px">
-      </div>
-    </main>
-    <footer>
-      <hr class="footer-line" style="display: block; margin: 4.5% 6% 0 6%;">
-      <div class="head-box" style="margin: 3% 6% 3.5% 6%">
-        <div id="footer-font" style="">For Business Inquiries, please email us at: <br> <br> loremipsum@gmail.com</div>
-        <div>
-        <div class="head-box" style="width: 40%; margin: 0 0 2% 0">
-          <a href="https://www.instagram.com/" target="_blank">
-            <img width="70%" src="assets/IG_Logo.png" alt="instaDirect"/></a>
-          <a href="https://www.youtube.com/" target="_blank">
-            <img width="80%" src="assets/YT_Logo.png" alt="youtubeDirect"/></a>
-          <a href="https://www.spotify.com/us/home/" target="_blank">
-            <img width="70%" src="assets/Spotify_Logo.png" alt="spotifyDirect"/></a>
-        </div>
-        <div class="footer2-font" style="">Powered by Ori. <br> Made with love from Seattle.</div>
+    <main style="margin-top: 2%">
+      <div class="head-box" style="align-items: flex-start">
+        <img style=" width: 15%; padding-top: 15%; margin: 5% 0 5% 0; box-shadow: 0px 0px 15px white;">
+        <div class="" style="width: 82%; margin-top: 6%">
+          <div class="head-box" style="align-items: flex-end;">
+            <div class="music-player-title-font" id="playingSong">
+
+            </div>
+            <div class="head-box" style="width: 45%; align-items: flex-end;">
+              <div class="music-player-listenOn-font">
+                Listen On
+              </div>
+              <div class="head-box" style="width: 70%">
+                <a href="" target="_blank">
+                  <img width="65%" src="assets/Spotify_Logo_MP.png" alt="Spotify"></a>
+                <a href="" target="_blank">
+                  <img width="65%" src="assets/Apple_Logo_MP.png" alt="Apple Music"></a>
+                <a href="" target="_blank">
+                  <img width="70%" src="assets/Youtube_Logo_MP.png" alt="YouTube"></a>
+                <a href="" target="_blank">
+                  <img width="70%" src="assets/Amazon_Logo_MP.png" alt="Amazon Music"></a>
+              </div>
+            </div>
+          </div>
+          <div class="head-box" style="width: 20%;margin-top: 6%">
+            <img src="assets/Previous_Icon.png" alt=" Previous Song">
+            <img id="controlIcon" onclick="playOrPause()" src="assets/Paused_Icon.png" alt="Resume" width="20%" style="cursor: pointer; user-select: none;">
+            <img src="assets/Skip_Icon.png" alt="Next Song">
           </div>
         </div>
+      </div>
+      <div id="songBox" style="border: 3px solid white; border-radius: 20px; padding: 20px">
+        <!--<div class="head-box">
+          <div id="song1" class="selected-font">hello</div>
+          <div id="song1time" class="selected-font">0:00</div>
+        </div>-->
+
+      </div>
+
+      <div class="big-font" style="margin: 10% 0 0 0">*****doesn't do anything******</div>
+      <img src="assets/Music_Player.png" alt="music player" style="width:100%;">
+    </main>
+    <footer style="margin: 4.5% 0 3.5% 0">
+      <hr class="footer-line" style="display: block;">
+      <div class="head-box" style="margin-top: 3%">
+        <div id="footer-font" style="">For Business Inquiries, please email us at:<br><br>loremipsum@gmail.com</div>
+        <div>
+          <div class="head-box" style="width: 40%;">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img width="70%" src="assets/IG_Logo.png" alt="instaDirect"/></a>
+            <a href="https://www.youtube.com/" target="_blank">
+              <img width="80%" src="assets/YT_Logo.png" alt="youtubeDirect"/></a>
+            <a href="https://www.spotify.com/us/home/" target="_blank">
+              <img width="70%" src="assets/Spotify_Logo.png" alt="spotifyDirect"/></a>
+          </div>
+          <div class="footer2-font" style="margin-top: 2%">Powered by Ori. <br> Made with love from Seattle.</div>
+        </div>
+      </div>
     </footer>
   </div>
   <!--MOBILE-VIEW----------------------------------------------->
@@ -63,7 +97,7 @@
       <header>
         <div class="head-box" style="width:84%; margin: 9.4% 0 9% 8%;">
            <img src="assets/Name_Logo.png" alt="paradiceLogo" width="73%" style="">
-           <img id="menuIcon" onclick="showMenu()" src="assets/Menu_Icon.png" alt="menuIcon" width="16%" style="cursor: pointer; user-select: none;">
+           <img onclick="showMenu()" src="assets/Menu_Icon.png" alt="menuIcon" width="16%" style="cursor: pointer; user-select: none;">
         </div>
       </header>
       <main style="margin: 10% 9% 0 9%">
@@ -98,7 +132,7 @@
             <a href="music.html"><div class="menu-font">Music</div></a>
             <a href="contact.html"><div class="menu-font">Contact</div></a>
           </div>
-          <img id="exitIcon" onclick="hideMenu()" src="assets/exit_icon.png" alt="exit" width="13%" style="cursor: pointer; user-select: none;">
+          <img onclick="hideMenu()" src="assets/exit_icon.png" alt="exit" width="13%" style="cursor: pointer; user-select: none;">
         </div>
       </main>
       <footer style="margin: 0% 8% 4% 8%;">
