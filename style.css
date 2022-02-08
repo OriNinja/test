@@ -78,15 +78,61 @@
   font-weight: bold;
 }
 
-.music-player-title-font{
+.MP-title-font{
   color: white;
   font-family: 'Arial', Helvetica, sans-serif;
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-weight: bold;
 }
-.music-player-listenOn-font{
+
+.MP-listenOn-font{
   color: white;
   font-family: 'Arial', Helvetica, sans-serif;
   font-size: 1.75vw;
   font-weight: normal;
+}
+
+.MP-selected-font{
+  color: white;
+  font-family: 'Arial', Helvetica, sans-serif;
+  font-size: 2.2vw;
+  font-weight: bold;
+  line-height: 1.8;
+
+}
+
+.MP-reg-font{
+  color: white;
+  font-family: 'Arial', Helvetica, sans-serif;
+  font-size: 1.8vw;
+  font-weight: normal;
+  line-height: 1.8
+}
+
+.album-image {
+  position: relative;
+  width: 15%; /* The size you want */
+}
+
+.album-image:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%; /* The padding depends on the width, not on the height, so with a padding-bottom of 100% you will get a square */
+}
+
+.album-image img {
+  position: absolute; /* Take your picture out of the flow */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; /* Make the picture taking the size of it's parent */
+  width: 100%; /* This if for the object-fit */
+  height: 100%; /* This if for the object-fit */
+  object-fit: cover; /* Equivalent of the background-size: cover; of a background-image */
+  object-position: center;
+}
+
+.pointerHover {
+  cursor: pointer;
+  user-select: none;
 }

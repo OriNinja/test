@@ -32,14 +32,16 @@
     </header>
     <main style="margin-top: 2%">
       <div class="head-box" style="align-items: flex-start">
-        <img style=" width: 15%; padding-top: 15%; margin: 5% 0 5% 0; box-shadow: 0px 0px 15px white;">
-        <div class="" style="width: 82%; margin-top: 6%">
+        <div class="album-image" style="margin: 5% 0 5% 0;">
+          <img id="songImage" src="https://images.pexels.com/photos/1884306/pexels-photo-1884306.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" style="box-shadow: 0px 0px 15px #555555;">
+        </div>
+        <div class="" style="width: 81%; margin-top: 6%">
           <div class="head-box" style="align-items: flex-end;">
-            <div class="music-player-title-font" id="playingSong">
-
+            <div class="MP-title-font" id="playingSongTitle">
+              Travel Way
             </div>
             <div class="head-box" style="width: 45%; align-items: flex-end;">
-              <div class="music-player-listenOn-font">
+              <div class="MP-listenOn-font">
                 Listen On
               </div>
               <div class="head-box" style="width: 70%">
@@ -54,23 +56,15 @@
               </div>
             </div>
           </div>
-          <div class="head-box" style="width: 20%;margin-top: 6%">
-            <img src="assets/Previous_Icon.png" alt=" Previous Song">
-            <img id="controlIcon" onclick="playOrPause()" src="assets/Paused_Icon.png" alt="Resume" width="20%" style="cursor: pointer; user-select: none;">
-            <img src="assets/Skip_Icon.png" alt="Next Song">
+          <div class="head-box" style="width: 25%;margin-top: 6%">
+            <img onclick="previousSong()" src="assets/Previous_Icon.png" alt="Previous Song" class="pointerHover">
+            <img id="controlIcon" onclick="playOrPause()" src="assets/Paused_Icon.png" alt="Resume" width="20%" class="pointerHover">
+            <img onclick="nextSong()" src="assets/Skip_Icon.png" alt="Next Song" class="pointerHover">
+            <audio id="playingMusic" src="songs/Travel Way.mp3"></audio>
           </div>
         </div>
       </div>
-      <div id="songBox" style="border: 3px solid white; border-radius: 20px; padding: 20px">
-        <!--<div class="head-box">
-          <div id="song1" class="selected-font">hello</div>
-          <div id="song1time" class="selected-font">0:00</div>
-        </div>-->
-
-      </div>
-
-      <div class="big-font" style="margin: 10% 0 0 0">*****doesn't do anything******</div>
-      <img src="assets/Music_Player.png" alt="music player" style="width:100%;">
+      <div id="songBox" style="border: 3px solid white; border-radius: 20px; padding: 15px"></div>
     </main>
     <footer style="margin: 4.5% 0 3.5% 0">
       <hr class="footer-line" style="display: block;">
@@ -155,5 +149,6 @@
     </div>
   </div>
   <script src="script.js"></script>
+  <script src="music.js"></script>
 </body>
 </html>

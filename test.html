@@ -9,13 +9,21 @@
 <style>
 </style>
 <body style="background:black;">
-  <header>
-  </header>
-  <main>
-    <img id="icon" onclick="action()" src="assets/Paused_Icon.png" alt="Resume" width="200px" style="cursor: pointer; user-select: none;">
-  </main>
-  <footer>
-  </footer>
+  <div class="head-box" style="margin: 5%;">
+    <div class="album-image">
+      <img id="songImage" src="https://images.pexels.com/photos/1884306/pexels-photo-1884306.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" style="box-shadow: 0px 0px 15px #555555;">
+    </div>
+    <div class="MP-title-font" id="playingSongTitle">
+      Travel Way
+    </div>
+    <div class="head-box" style="width: 30%;">
+      <img onclick="previousSong()" class="pointerHover" src="assets/Previous_Icon.png" alt="Previous Song">
+      <img id="controlIcon" onclick="playOrPause()" class="pointerHover" src="assets/Paused_Icon.png" alt="Resume" width="20%">
+      <img onclick="nextSong()" class="pointerHover" src="assets/Skip_Icon.png" alt="Next Song">
+      <audio id="playingMusic" src="songs/Travel Way.mp3"></audio>
+    </div>
+  </div>
+  <div id="songBox" style="border: 3px solid white; border-radius: 20px; padding: 15px"></div>
   <script src="test.js"></script>
 </body>
 </html>
