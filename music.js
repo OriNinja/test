@@ -87,3 +87,62 @@ function nextSong() {
 function previousSong() {
   changeSong(currentSong - 1);
 };
+// MOBILE
+var mControlIcon = document.getElementById("MControlIcon");
+var mPlayingSong = document.getElementById('MPlayingSong');
+var mSongBox = document.getElementById('MSongBox');
+var mSongImage = document.getElementById('MSongImage');
+var mSongElements = [];
+
+function MPlayOrPause(){
+  if (isPaused) {
+    mControlIcon.src = "assets/Playing_Icon.png";
+    playingMusic.play();
+    isPaused = false;
+  } else {
+    mControlIcon.src = "assets/Paused_Icon.png";
+    playingMusic.pause();
+    isPaused = true;
+  };
+};
+
+for (var i = 0; i < songsArray.length; i++) {
+  mSongBox.innerHTML = mSongBox.innerHTML + "<div id = MSongElements["+ i +"] class='M-MP-reg-font' onclick='MChangeSong("+ i +")'> <div style='display: inline;'>"+ songsArray[i].title +"</div> <div style='display: inline; float: right;'>"+ songsArray[i].length +"</div></div>";
+}
+
+for (var i = 0; i < songsArray.length; i++) {
+  mSongElements[i] = document.getElementById("MSongElements["+i+"]");
+};
+
+function MChangeClass() {
+  mSongElements[currentSong].classList.remove("M-MP-reg-font");
+  mSongElements[currentSong].classList.add("M-MP-selected-font");
+}
+
+MChangeClass();
+
+function MChangeSong(songNum) {
+  if (songNum < 0) {
+    songNum = songsArray.length - 1;
+  } else if (songsArray.length == songNum) {
+    songNum = 0;
+  };
+  mSongElements[currentSong].classList.remove("M-MP-selected-font");
+  mSongElements[currentSong].classList.add("M-MP-reg-font");
+  currentSong = songNum;
+  playingMusic.src = songsArray[currentSong].source;
+  mPlayingSongTitle.innerHTML = songsArray[currentSong].title;
+  mSongImage.src = songsArray[currentSong].imageSource;
+  playingMusic.setAttribute("autoplay", "");
+  mControlIcon.src = "assets/Playing_Icon.png";
+  isPaused = false;
+  MChangeClass();
+}
+
+function MNextSong() {
+  MChangeSong(currentSong + 1);
+};
+
+function MPreviousSong() {
+  MChangeSong(currentSong - 1);
+};

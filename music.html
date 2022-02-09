@@ -21,6 +21,7 @@
   }
 </style>
 <body style="background:black;">
+  <audio id="playingMusic" src="songs/Travel Way.mp3"></audio>
   <!--DESKTOP-VIEW---------------------------------------------->
   <div class="desktop-view" style="margin: 0 6% 0 6%">
     <header style="margin-top: 2.2%" class="head-box">
@@ -57,10 +58,9 @@
             </div>
           </div>
           <div class="head-box" style="width: 25%;margin-top: 6%">
-            <img onclick="previousSong()" src="assets/Previous_Icon.png" alt="Previous Song" class="pointerHover">
+            <img onclick="previousSong()" src="assets/Previous_Icon.png" alt="Previous Song" width="20%" class="pointerHover">
             <img id="controlIcon" onclick="playOrPause()" src="assets/Paused_Icon.png" alt="Resume" width="20%" class="pointerHover">
-            <img onclick="nextSong()" src="assets/Skip_Icon.png" alt="Next Song" class="pointerHover">
-            <audio id="playingMusic" src="songs/Travel Way.mp3"></audio>
+            <img onclick="nextSong()" src="assets/Skip_Icon.png" alt="Next Song" width="20%" class="pointerHover">
           </div>
         </div>
       </div>
@@ -91,11 +91,34 @@
       <header>
         <div class="head-box" style="width:84%; margin: 9.4% 0 9% 8%;">
            <img src="assets/Name_Logo.png" alt="paradiceLogo" width="73%" style="">
-           <img onclick="showMenu()" src="assets/Menu_Icon.png" alt="menuIcon" width="16%" style="cursor: pointer; user-select: none;">
+           <img onclick="showMenu()" src="assets/Menu_Icon.png" alt="menuIcon" width="16%">
         </div>
       </header>
       <main style="margin: 10% 9% 0 9%">
-        <div class="small-font">*insert <i>smol</i> music player here*</div>
+        <div class="mobile-album-image" style="margin: 0 auto 0 auto;">
+          <img id="MSongImage" style="box-shadow: 0px 0px 15px #555555;" src="https://images.pexels.com/photos/1884306/pexels-photo-1884306.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+        </div>
+        <div class="head-box" style="width: 70%;margin: 14% auto 14% auto">
+          <img onclick="MPreviousSong()" src="assets/Previous_Icon.png" alt="Previous Song" width="16%">
+          <img id="MControlIcon" onclick="MPlayOrPause()" src="assets/Paused_Icon.png" alt="Resume" width="16%">
+          <img onclick="MNextSong()" src="assets/Skip_Icon.png" alt="Next Song" width="16%">
+        </div>
+        <div id="MSongBox" style="border: .9vw solid white; border-radius: 8%; padding: 0% 5% 3% 5%;">
+          <div class="M-MP-title-font" id="mPlayingSongTitle">Travel Way</div>
+        </div>
+        <div class="head-box" style="width: 100%;margin: 10% 0 20% 0;">
+          <div class="M-MP-listenOn-font">
+            Listen On
+          </div>
+          <a href="" target="_blank">
+            <img width="100%" src="assets/Spotify_Logo_MP.png" alt="Spotify"></a>
+          <a href="" target="_blank">
+            <img width="100%" src="assets/Apple_Logo_MP.png" alt="Apple Music"></a>
+          <a href="" target="_blank">
+            <img width="100%" src="assets/Youtube_Logo_MP.png" alt="YouTube"></a>
+          <a href="" target="_blank">
+            <img width="100%" src="assets/Amazon_Logo_MP.png" alt="Amazon Music"></a>
+        </div>
       </main>
       <footer style="margin: 10% 0 4% 8%;">
         <div class="head-box" style="width: 40%; margin: 0 0 2% 0">
@@ -126,7 +149,7 @@
             <a href="music.html"><div class="menu-font">Music</div></a>
             <a href="contact.html"><div class="menu-font">Contact</div></a>
           </div>
-          <img onclick="hideMenu()" src="assets/exit_icon.png" alt="exit" width="13%" style="cursor: pointer; user-select: none;">
+          <img onclick="hideMenu()" src="assets/exit_icon.png" alt="exit" width="13%">
         </div>
       </main>
       <footer style="margin: 0% 8% 4% 8%;">
